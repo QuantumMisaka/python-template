@@ -36,7 +36,7 @@ jobs:
       - name: Test with pytest
         run: nox -db uv
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           use_oidc: true
       - name: Minimize uv cache
